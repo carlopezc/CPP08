@@ -6,7 +6,7 @@
 /*   By: carlotalcd <carlotalcd@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/24 11:55:06 by carlotalcd        #+#    #+#             */
-/*   Updated: 2026/02/24 12:45:48 by carlotalcd       ###   ########.fr       */
+/*   Updated: 2026/04/15 17:19:05 by carlotalcd       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class FullException : public std::exception {
         virtual ~FullException() throw() {}
 
         virtual const char * what() const throw() {
-            return ("Error: Array lleno");
+            return ("Error: Full array");
         }
 };
 
@@ -40,7 +40,7 @@ class EmptyException : public std::exception {
         virtual ~EmptyException() throw() {}
 
         virtual const char * what() const throw() {
-            return ("Error: Elementos insuficientes");
+            return ("Error: insuficient elements");
         }
 };
 
@@ -60,6 +60,7 @@ class Span {
         void addNumber(int number);
         unsigned int shortestSpan() const;
         unsigned int longestSpan() const;
+        
         template <typename Iterator>
         void addNumbers(Iterator begin, Iterator end) {
             unsigned int distance = std::distance(begin, end);

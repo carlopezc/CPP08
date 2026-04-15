@@ -6,7 +6,7 @@
 /*   By: carlotalcd <carlotalcd@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 11:11:49 by carlotalcd        #+#    #+#             */
-/*   Updated: 2026/02/24 12:53:06 by carlotalcd       ###   ########.fr       */
+/*   Updated: 2026/04/15 17:22:08 by carlotalcd       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ int main()
         Span sp_vacio(5);
         std::cout << "Anadiendo 1 numero e intentando calcular el span..." << std::endl;
         sp_vacio.addNumber(42);
-        sp_vacio.shortestSpan(); // Esto debe lanzar la excepcion
+        sp_vacio.shortestSpan();
     } 
     catch (std::exception &e) 
     {
@@ -81,7 +81,7 @@ int main()
         std::cout << "Anadiendo 3 numeros a un Span de tamano 2..." << std::endl;
         sp_lleno.addNumber(1);
         sp_lleno.addNumber(2);
-        sp_lleno.addNumber(3); // Esto debe lanzar la excepcion
+        sp_lleno.addNumber(3);
     } 
     catch (std::exception &e) 
     {
