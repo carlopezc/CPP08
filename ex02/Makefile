@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: carlopez <carlopez@student.42.fr>          +#+  +:+       +#+         #
+#    By: carlotalcd <carlotalcd@student.42.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/14 16:42:21 by carlopez          #+#    #+#              #
-#    Updated: 2026/04/14 17:12:30 by carlopez         ###   ########.fr        #
+#    Updated: 2026/04/15 17:27:41 by carlotalcd       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ DDIR		= deps
 
 #*********************************************************************************#
 
-SRC			= src/main.cpp src/my_main.cpp
+SRC			= src/main.cpp
 HEADER		= src/MutantStack.hpp
 
 OBJ			= $(SRC:%.cpp=$(ODIR)/%.o)

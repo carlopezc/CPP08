@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   MutantStack.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: carlopez <carlopez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: carlotalcd <carlotalcd@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 16:44:18 by carlopez          #+#    #+#             */
-/*   Updated: 2026/04/14 17:06:11 by carlopez         ###   ########.fr       */
+/*   Updated: 2026/04/15 17:34:44 by carlotalcd       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,13 @@ template <typename T>
 class MutantStack : public std::stack<T> {
 
     public :
+
     MutantStack() : std::stack<T>() {}
     virtual ~MutantStack() {}
     MutantStack(const MutantStack<T>& other) : std::stack<T>(other) {}
     MutantStack& operator=(const MutantStack& other) {
-        if (this != &other) 
-        {
+        if (this != &other)
             std::stack<T>::operator=(other);
-        }
         return (*this);
     }
     
