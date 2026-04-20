@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: carlotalcd <carlotalcd@student.42.fr>      +#+  +:+       +#+        */
+/*   By: carlopez <carlopez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 11:11:49 by carlotalcd        #+#    #+#             */
-/*   Updated: 2026/04/15 12:53:30 by carlotalcd       ###   ########.fr       */
+/*   Updated: 2026/04/20 18:17:41 by carlopez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "easyfind.hpp"
 #include <iostream>
 #include <list>
+#include <vector>
 
 int main (void)
 {
