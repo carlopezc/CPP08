@@ -6,7 +6,7 @@
 /*   By: carlopez <carlopez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/24 11:55:06 by carlotalcd        #+#    #+#             */
-/*   Updated: 2026/04/20 18:21:01 by carlopez         ###   ########.fr       */
+/*   Updated: 2026/04/22 18:15:15 by carlopez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,6 @@
 class FullException : public std::exception {
     public :
 
-        FullException() throw() {}
-        FullException(const FullException&) throw() {}
-        FullException& operator=(const FullException&) throw() { return *this; }
-        virtual ~FullException() throw() {}
-
         virtual const char * what() const throw() {
             return ("Error: Full array");
         }
@@ -33,11 +28,6 @@ class FullException : public std::exception {
 
 class EmptyException : public std::exception {
     public :
-
-        EmptyException() throw() {}
-        EmptyException(const EmptyException&) throw() {}
-        EmptyException& operator=(const EmptyException&) throw() { return *this; }
-        virtual ~EmptyException() throw() {}
 
         virtual const char * what() const throw() {
             return ("Error: insuficient elements");

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: carlotalcd <carlotalcd@student.42.fr>      +#+  +:+       +#+        */
+/*   By: carlopez <carlopez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 11:11:49 by carlotalcd        #+#    #+#             */
-/*   Updated: 2026/04/15 17:22:08 by carlotalcd       ###   ########.fr       */
+/*   Updated: 2026/04/22 17:54:26 by carlopez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,7 @@ int main()
         std::cout << "Shortest span (esperado 2): " << sp.shortestSpan() << std::endl;
         std::cout << "Longest span (esperado 14): " << sp.longestSpan() << std::endl;
     } 
-    catch (std::exception &e) 
-    {
+    catch (std::exception &e) {
         std::cerr << "Error: " << e.what() << std::endl;
     }
 
